@@ -1,0 +1,78 @@
+body {
+  background-color:rgb(235,230,255 );
+  scroll-behavior: smooth;
+}
+.FirstTable {
+  float: left;
+  width: 50%;
+}
+.SecondTable {
+  float: right;
+  width: 50%;
+}
+table {
+  margin: 10px;
+  border-collapse: collapse;
+  border: 3px inset black
+}
+td {
+  height: 70px;
+  padding: 5px;
+  margin: 10px;
+  border-collapse: collapse;
+  border: 3px inset black;
+}
+th {
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  border-collapse: collapse;
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+h3 {
+  text-align: center
+}
+img {
+  vertical-align: middle;
+}
+.Negative {
+  color: red;
+}
+.Positive {
+  color: green;
+}
+
+
+nav table
+{
+  border-radius: 100px 25px 100px 25px;
+  height: 30px;
+  width: auto;
+  background-color: #00cc66;
+  box-shadow: 0px 0px 10px 3px #ACA8A8;
+  border: none;
+  top: 0px;
+  bottom: 0px;
+}
+nav th {
+  min-width: 100px;
+  border: none;
+  float: left;
+}
+nav {
+  padding: 5px;
+}
+nav button {
+  transform: scale(0.84);
+}
+h1 {
+  position: relative;
+}
+@media screen and (max-width: 1100px) {
+  .FirstTable {
+    width:100%;
+    }
+  .SecondTable {
+    width:100%;
+    }
+  }

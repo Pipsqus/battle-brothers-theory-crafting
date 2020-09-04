@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Battle Brothers - Weapons</title>
+<!--    <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="melee.css">
+    <script type="text/javascript" src="melee.js"> </script>
+  </head>
+  <body>
+
+    <nav class="nav1">
+      <table>
+        <th> <button onclick="SwordsView()">Swords</button> </th>
+        <th> <button onclick="DaggersView()">Daggers</button> </th>
+        <th> <button onclick="MacesView()">Maces</button> </th>
+        <th> <button onclick="HammersView()">Hammers</button> </th>
+        <th> <button onclick="SpearsView()">Spears</button> </th>
+        <th> <button onclick="AxesView()">Axes</button> </th>
+        <th> <button onclick="FlailsView()">Flails</button> </th>
+        <th> <button onclick="CleaversView()">Cleavers</button> </th>
+        <th> <button onclick="PolearmsView()">Polearms</button> </th>
+      </table>
+    </nav>
+
+    <h1>  </h1>
+
+    <div class="FirstTable">
+      <table>
+        <tr>
+          <th rowspan="19" id="SwordsView"> <h2> Swords </h2> </th>
+        </tr>
+              <tr> <td rowspan="9"> <h3> 1H Swords </h3> </td> </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Slash.png"> Slash </td> </tr>
+                                        <tr>
+                                          <td> <span class="Positive">+10%</span> hit chance. </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Gash.png"> Gash </td> </tr>
+                                        <tr>
+                                          <td> <span class="Positive">+10%</span> hit chance. <br> <span class="Positive">33%</span> lower threshold for injuries  </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Riposte.png"> Riposte </td> </tr>
+                                        <tr>
+                                          <td> <span class="Negative">-10%</span> hit chance. <br> Counterattacks for 1 turn.</td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Lunge.png"> Lunge </td> </tr>
+                                        <tr>
+                                          <td>  </td>
+                                        </tr>
+
+              <tr> <td rowspan="9"> <h3> 2H Swords </h3> </td> </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Overhead_Strike.png"> Slash / Overhead Strike </td> </tr>
+                                          <tr> <td> <span class="Positive">+5 / +10%</span> hit chance. <br> <span class="Positive">+20</span> damage. </td> </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Split.png"> Split </td> </tr>
+                                        <tr>
+                                          <td> <span class="Negative">-5%</span> hit chance. <br> Hits 2 targets in a line.</td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Swing.png"> Swing </td> </tr>
+                                        <tr>
+                                          <td> <span class="Negative">-5%</span> hit chance. <br> Hits 3 targets counterclockwise. </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Split_Shield.png"> Split Shield </td> </tr>
+                                        <tr>
+                                          <td>  </td>
+                                        </tr>
+
+
+        <tr>
+          <th rowspan="10" id="DaggersView"> <h2> Daggers </h2> </th>
+        </tr>
+              <tr> <td rowspan=9> &nbsp; </td> </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Stab.png"> Stab </td> </tr>
+                                        <tr>
+                                          <td>  </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Punture.png"> Puncture </td> </tr>
+                                        <tr>
+                                          <td> <span class="Negative">-15%</span> hit chance. <br> Ignores armor. <br> No crits </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Deathblow.png"> Deathblow </td> </tr>
+                                        <tr>
+                                          <td> <span class="Positive">+33%</span> damage. <br> <span class="Positive">+53%</span> damage against Dazed, Stunned, Trapped.  </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Slash.png"> Slash </td> </tr>
+                                        <tr>
+                                          <td> <span class="Positive">+10%</span> hit chance. </td>
+                                        </tr>
+                                        <tr>
+
+
+
+          <th rowspan="19" id="MacesView"> <h2> Maces </h2> </th>
+        </tr>
+              <tr> <td rowspan="5"> <h3> 1H Maces </h3> </td> </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Bash.png"> Bash </td> </tr>
+                                        <tr>
+                                          <td> Induces 10 Fatigue </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Knock_Out.png"> Knock-out </td> </tr>
+                                        <tr>
+                                          <td> <span class="Negative">-50%</span> damage. <br> <span class="Positive">+10%</span> stun chance. <br> 10 Fatigue on enemy.</td>
+                                        </tr>
+
+              <tr> <td rowspan="13"> <h3> 2H Maces </h3> </td> </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Cudgel.png"> Cudgel </td> </tr>
+                                        <tr>
+                                          <td> <span class="Positive">+20</span> damage. <br> <span class="Positive">100%</span> daze chance. <br> 20 Fatigue on enemy </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Strike_down.png"> Strike Down </td> </tr>
+                                        <tr>
+                                          <td> <span class="Negative">-50%</span> damage. <br> <span class="Positive">75%</span> stun chance. <br> 20 Fatigue on enemy. </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Split_Shield.png"> Split Shield </td> </tr>
+                                        <tr>
+                                          <td> </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Crumble.png"> Crumble </td> </tr>
+                                        <tr>
+                                          <td> <span class="Negative">-15%</span> hit chance on adjacent enemies. <br> 10 Fatigue on enemy.</td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Knock_over.png"> Knock-Over </td> </tr>
+                                        <tr>
+                                          <td> <span class="Negative">-15%</span> hit chance on adjacent enemies. <br> <span class="Negative">-50%</span> damage. <br> <span class="Positive">75%</span> stun chance. <br> 10 Fatigue on enemy. </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Thrust_G.png"> Thrust and Knock-out (Goedendag) </td> </tr>
+                                        <tr>
+                                          <td> <span class="Positive">+20%</span> hit chance. <br> Knock-out is like 1H Maces </td>
+                                        </tr>
+
+
+        <tr>
+          <th rowspan="19" id="HammersView"> <h2> Hammers </h2> </th>
+        </tr>
+              <tr> <td rowspan="7"> <h3> 1H Hammers </h3> </td> </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Batter.png"> Batter </td> </tr>
+                                        <tr>
+                                          <td> At least 10 <img src="melee-weapons/Health.png"> damage </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Destroy_armor.png"> Destroy Armor </td> </tr>
+                                        <tr>
+                                          <td> 10 <img src="melee-weapons/Health.png"> damage <br> <span class="Positive">+50%</span> against armor. </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Split_Shield.png"> Split Shield </td> </tr>
+                                        <tr>
+                                          <td>  </td>
+                                        </tr>
+
+              <tr> <td rowspan="11"> <h3> 2H Hammers </h3> </td> </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Smite.png"> Smite </td> </tr>
+                                        <tr>
+                                          <td> <span class="Positive">+20</span> damage. <br> <span class="Positive">+100%</span> stagger chance.  </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Shatter.png"> Shatter </td> </tr>
+                                        <tr>
+                                          <td> Hits 3 targets counterclockwise. <span class="Positive">+33%</span> stagger chance. <br> <span class="Positive">+33%</span> knockback chance. </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Split_Shield.png"> Split Shield </td> </tr>
+                                        <tr>
+                                          <td>  </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Batter.png"> Batter </td> </tr>
+                                        <tr>
+                                          <td> At least 10 <img src="melee-weapons/Health.png"> damage. <br> <span class="Negative">-15%</span> hit chance on adjacent enemies. </td>
+                                        </tr>
+                  <tr> <td rowspan="2"> <img src="melee-weapons/Destroy_armor.png"> Demolish Armor </td> </tr>
+                                        <tr>
+                                          <td> 10 <img src="melee-weapons/Health.png"> damage <br> <span class="Positive">+45%</span> against armor. <br> <span class="Negative">-15%</span> hit chance on adjacent enemies.</td>
+                                        </tr>
+
+
+      </table>
+    </div>
+
+<!-- HERE starts the second table; Spears, Axes, Flails -->
+
+    <div class="SecondTable">
+      <table>
+            <tr>
+              <th rowspan="13" id="SpearsView"> <h2> Spears </h2> </th>
+            </tr>
+                  <tr> <td rowspan="7"> <h3> 1H Spears </h3> </td> </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Thrust.png"> Thrust </td> </tr>
+                                            <tr>
+                                              <td> <span class="Positive">+20%</span> hit chance. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Ignite.png"> Ignite </td> </tr>
+                                            <tr>
+                                              <td> <span class="Positive">40-60</span> damage to 2 targets (90% effective against armor). Hit chance is based on ranged+40. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Spearwall.png"> Spearwall </td> </tr>
+                                            <tr>
+                                              <td> <span class="Negative">-50%</span> damage. <br> Cancels if it misses. </td>
+                                            </tr>
+
+                  <tr> <td rowspan="5"> <h3> 2H Spears </h3> </td> </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Prong.png"> Prong </td> </tr>
+                                            <tr>
+                                              <td> <span class="Positive">+10%</span> damage. <br> <span class="Negative">-15%</span> hit chance on adjacent enemies. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Spearwall.png"> Spearwall </td> </tr>
+                                            <tr>
+                                              <td> <span class="Negative">-50%</span> damage. <br> Cancels if it misses. <br> 1 tile range. </td>
+                                            </tr>
+
+
+            <tr>
+              <th rowspan="19" id="AxesView"> <h2> Axes </h2> </th>
+            </tr>
+                  <tr> <td rowspan="7"> <h3> 1H Axes </h3> </td> </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Chop.png"> Chop </td> </tr>
+                                            <tr>
+                                              <td> <span class="Positive">+50%</span> <img src="melee-weapons/Health.png"> damage when it hits the head. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Split_Shield.png"> Split Shield </td> </tr>
+                                            <tr>
+                                              <td> </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Batter.png"> Batter </td> </tr>
+                                            <tr>
+                                              <td> At least 10 <img src="melee-weapons/Health.png"> damage </td>
+                                            </tr>
+                  <tr> <td rowspan="11"> <h3> 2H Axes </h3> </td> </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Split_Man.png"> Split man </td> </tr>
+                                            <tr>
+                                              <td> Hits head AND body </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Round_Swing.png"> Round Swing </td> </tr>
+                                            <tr>
+                                              <td> <span class="Negative">-15%</span> hit chance. <br> <span class="Negative">-10%</span> armor penetration. <br> Hits 6 targets.  </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Split.png"> Split </td> </tr>
+                                            <tr>
+                                              <td> <span class="Negative">-5%</span> hit chance. <br> Hits 2 targets in a line. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Split_Shield.png"> Split Shield </td> </tr>
+                                            <tr>
+                                              <td> <span class="Negative">-15%</span> hit chance on adjacent enemies. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Strike.png"> Strike </td> </tr>
+                                            <tr>
+                                              <td> <span class="Negative">-15%</span> hit chance on adjacent enemies. </td>
+                                            </tr>
+
+            <tr>
+              <th rowspan="15" id="FlailsView"> <h2> Flails </h2> </th>
+            </tr>
+                  <tr> <td rowspan="9"> <h3> 1H Flails </h3> </td> </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Flail.png"> Flail </td> </tr>
+                                            <tr>
+                                              <td> Ignores shields. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Lash.png"> Lash </td> </tr>
+                                            <tr>
+                                              <td> Hits the head. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Cascade.png"> Cascade </td> </tr>
+                                            <tr>
+                                              <td> Ignores shields. <br> Makes 3 strikes, at 1/3 damage each. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Hail.png"> Hail </td> </tr>
+                                            <tr>
+                                              <td> Hits the head. <br> Makes 3 strikes, at 1/3 damage each. </td>
+                                            </tr>
+                  <tr> <td rowspan="5"> <h3> 2H Flails </h3> </td> </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Pound.png"> Pound </td> </tr>
+                                            <tr>
+                                              <td> <span class="Positive">+20</span> damage. <br> <span class="Positive">+10%</span> armor penetration. <br> <span class="Positive">30%</span> stun chance. <br> Ignores shields. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Thresh.png"> Thresh </td> </tr>
+                                            <tr>
+                                              <td> <span class="Negative">-15%</span> hit chance. <br> <span class="Positive">20%</span> stun chance. <br> Hits 6 targets. </td>
+                                            </tr>
+
+            <tr>
+              <th rowspan="17" id="CleaversView"> <h2> Cleavers </h2> </th>
+            </tr>
+                  <tr> <td rowspan="9"> <h3> 1H Cleavers </h3> </td> </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Cleave.png"> Cleave </td> </tr>
+                                            <tr>
+                                              <td> >5 <img src="melee-weapons/Health.png"> damage &#8594; 5 bleeding for 2 turns.  </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Decapitate.png"> Decapitate </td> </tr>
+                                            <tr>
+                                              <td> Scales with lost health of target. <br> Kill &#8594; Decapitation. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Whip.png"> Whip </td> </tr>
+                                            <tr>
+                                              <td> >5 <img src="melee-weapons/Health.png"> damage &#8594; 5 bleeding for 2 turns. <br> 3 tiles range. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Disarm.png"> Disarm </td> </tr>
+                                            <tr>
+                                              <td> <span class="Negative">-15%</span> hit chance. <br> Disarms for 1 turn. <br> 3 tiles range. </td>
+                                            </tr>
+
+                  <tr> <td rowspan="7"> <h3> 2H Cleavers </h3> </td> </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Cleave.png"> Cleave </td> </tr>
+                                            <tr>
+                                              <td>  >5 <img src="melee-weapons/Health.png"> damage &#8594; 5 bleeding for 2 turns. <br> 3 tiles range. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Decapitate.png"> Decapitate </td> </tr>
+                                            <tr>
+                                              <td> Scales with lost health of target. <br>  Kill &#8594; Decapitation. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Split_Shield.png"> Split Shield </td> </tr>
+                                            <tr>
+                                              <td>  </td>
+                                            </tr>
+
+
+            <tr>
+              <th rowspan="14" id="PolearmsView"> <h2> Polearms </h2> </th>
+            </tr>
+                  <tr> <td rowspan="13" style="text-align:center"> <h3> 2H Polearms </h3> <span class="Negative">-15%</span> hit chance on adjacent targets. <br> <span class="Positive">+5% / +10%</span> hit chance. </td> </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Impale.png"> Impale </td> </tr>
+                                            <tr>
+                                              <td> </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Repel.png"> Repel </td> </tr>
+                                            <tr>
+                                              <td> <span class="Positive">100%</span> stagger chance. <br> </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Strike.png"> Strike </td> </tr>
+                                            <tr>
+                                              <td>  </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Hook.png"> Hook </td> </tr>
+                                            <tr>
+                                              <td> Pulls an enemy 2 tiles away. <br> <span class="Positive">100%</span> stagger chance. </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Rupture.png"> Rupture </td> </tr>
+                                            <tr>
+                                              <td> >5 <img src="melee-weapons/Health.png"> damage &#8594; 5 bleeding for 2 turns. <br> </td>
+                                            </tr>
+                      <tr> <td rowspan="2"> <img src="melee-weapons/Reap.png"> Reap </td> </tr>
+                                            <tr>
+                                              <td> No bonus to hit. <br> <span class="Negative">-5%</span> armor penetration <br> Hits 3 targets counterclockwise. </td>
+                                            </tr>
+          </table>
+    </div>
+
+  </body>
+</html>
