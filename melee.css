@@ -1,15 +1,11 @@
 body {
   background-color:rgb(235,230,255 );
-  scroll-behavior: smooth;
 }
-
-
 
 .ResponsiveTable {
   float: left;
   width: 50%;
 }
-
 table {
   margin: 10px;
   border-collapse: collapse;
@@ -21,13 +17,7 @@ td {
   margin: 10px;
   border-collapse: collapse;
   border: 3px inset black;
-}
-th {
   text-align: center;
-  padding: 5px;
-  margin: 10px;
-  border-collapse: collapse;
-  border-bottom: 3px inset black;
 }
 h3 {
   text-align: center
