@@ -2,14 +2,14 @@ body {
   background-color:rgb(235,230,255 );
   scroll-behavior: smooth;
 }
-.FirstTable {
+
+
+
+.ResponsiveTable {
   float: left;
   width: 50%;
 }
-.SecondTable {
-  float: right;
-  width: 50%;
-}
+
 table {
   margin: 10px;
   border-collapse: collapse;
@@ -27,7 +27,7 @@ th {
   padding: 5px;
   margin: 10px;
   border-collapse: collapse;
-  border-bottom: 3px solid rgb(0, 0, 0);
+  border-bottom: 3px inset black;
 }
 h3 {
   text-align: center
@@ -43,36 +43,44 @@ img {
 }
 
 
-nav table
-{
-  border-radius: 100px 25px 100px 25px;
-  height: 30px;
-  width: auto;
-  background-color: #00cc66;
-  box-shadow: 0px 0px 10px 3px #ACA8A8;
-  border: none;
-  top: 0px;
-  bottom: 0px;
+#Swords {
+  background-color: rgb(11,163,260,0.2);
 }
-nav th {
-  min-width: 100px;
-  border: none;
-  float: left;
+#Daggers {
+  background-color: rgb(90,256,81,0.4)
 }
-nav {
-  padding: 5px;
+#Maces {
+  background-color: rgb(95,83,29,0.3);
 }
-nav button {
-  transform: scale(0.84);
+#Hammers {
+  background-color: rgb(34,15,67,0.3);
 }
+#Spears {
+  background-color: rgb(11,163,260,0.2);
+}
+#Axes {
+  background-color: rgb(90,256,81,0.4);
+}
+#Flails {
+  background-color: rgb(95,83,29,0.3);
+}
+#Cleavers {
+  background-color: rgb(34,15,67,0.3);
+}
+#Polearms {
+  background-color: rgb(11,163,260,0.2);
+}
+
+tr:hover {
+  background-color: rgb(100,200,50,0.7);
+}
+
+
 h1 {
-  position: relative;
+  text-align: center;
 }
 @media screen and (max-width: 1100px) {
-  .FirstTable {
-    width:100%;
-    }
-  .SecondTable {
+  .ResponsiveTable {
     width:100%;
     }
   }
